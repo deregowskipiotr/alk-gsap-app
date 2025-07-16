@@ -61,7 +61,7 @@ const Art = () => {
         <div className="masked-container">
           <h2 className="will-fade">Sip-Worthy Perfection</h2>
           <div id='mask-content'>
-            <h3>Made with craft, Care and Passion.</h3>
+            <h3>Made with Craft, Care and Passion.</h3>
             <p>This isn't just a cocktail. It's an experience that you'll never forget.</p>
           </div>
         </div>
