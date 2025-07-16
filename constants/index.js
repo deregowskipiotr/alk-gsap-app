@@ -46,19 +46,19 @@ const cocktailLists = [
 
 const mockTailLists = [
   {
-    name: "Tropical Bloom",
+    name: "Nojito",
     country: "US",
-    detail: "Battle",
+    detail: "300 ml",
     price: "$10",
   },
   {
-    name: "Passionfruit Mint",
+    name: "Shirley Temple",
     country: "US",
-    detail: "Battle",
+    detail: "350ml",
     price: "$49",
   },
   {
-    name: "Citrus Glow",
+    name: "Virgin Piña Colada",
     country: "CA",
     detail: "750 ml",
     price: "$20",

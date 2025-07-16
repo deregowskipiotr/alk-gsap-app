@@ -10,61 +10,60 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useGSAP(() => {
-    const heroSplit = new SplitText('.title', { type: 'chars, words'});
-    const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
-
-    heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
-
-    gsap.from(heroSplit.chars, {
-      yPercent: 100,
-      stagger: 0.06,
-      duration: 1.8,
-      ease: 'expo.out',
-    });
-
-    gsap.from(paragraphSplit.lines, {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1.8,
-      stagger: 0.06,
-      ease: 'expo.out',
-      delay: 1,
-  });
-
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: "#hero",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-    })
-
-    .to('.right-leaf', { y:200 }, 0)
-    .to('.left-leaf', { y:-200 }, 0)
-
-    const startValue = isMobile ? 'top 50%' : 'center 60%';
-    const endValue = isMobile ? '120% top' : 'bottom top';
-
-    // Video animation timeline
-    // Create the timeline with a default duration
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "video",
-        start: startValue,
-        end: endValue,
-        scrub: true,
-        pin: true,
-      },
-    })
-
-    videoRef.current.onloadedmetadata = () => {
-      tl.to(videoRef.current, {
-        currentTime: videoRef.current.duration,
-      })
-    };
     
+      const heroSplit = new SplitText(".title", { type: "chars, words" });
+      const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
+
+      heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
+
+      gsap.from(heroSplit.chars, {
+        yPercent: 100,
+        stagger: 0.06,
+        duration: 1.8,
+        ease: "expo.out",
+      });
+
+      gsap.from(paragraphSplit.lines, {
+        opacity: 0,
+        yPercent: 100,
+        duration: 1.8,
+        stagger: 0.06,
+        ease: "expo.out",
+        delay: 1,
+      });
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        })
+        .to(".right-leaf", { y: 200 }, 0)
+        .to(".left-leaf", { y: -200 }, 0);
+
+      const startValue = isMobile ? "top 50%" : "center 60%";
+      const endValue = isMobile ? "120% top" : "bottom top";
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "video",
+          start: startValue,
+          end: endValue,
+          scrub: true,
+          pin: true,
+        },
+      });
+
+      videoRef.current.onloadedmetadata = () => {
+        tl.to(videoRef.current, {
+          currentTime: videoRef.current.duration,
+        });
+      };
   }, []);
+
 
   return (
     <>
