@@ -68,9 +68,19 @@ const About = () => {
       </div>
 
       <div className="bottom-grid">
-        <div className="md:col-span-8">
+        <div className="md:col-span-5">
           <div className="noisy hover:opacity-0 duration-600 transition-all ease-in-out cursor-pointer" />
           <img src="/images/abt3.png" alt="grid-img-3" />
+        </div>
+
+        <div className="md:col-span-3 text-center px-6 font-serif text-lime-600">
+          <div className="noisy hover:opacity-0 duration-600 transition-all ease-in-out cursor-pointer" />
+          <p className="mt-10">
+            Shake, stir, and dazzle your friends—because making killer drinks in
+            your Home is way more fun than waiting in line at the bar!</p> <br />
+           <p className="mt-5"> Grab your shaker and ice—if you can open your fridge, you’re halfway
+            to being the party’s favorite home bartender!
+          </p>
         </div>
 
         <div className="md:col-span-4">
