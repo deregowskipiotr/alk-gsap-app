@@ -67,8 +67,8 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy">
-        <h1 className="title">Mixology</h1>
+      <section id="hero" className="noisy h-[100%]">
+        <h1 className="title">Bartenday</h1>
 
         <img
           src="/images/hero-left-leaf.png"
@@ -93,24 +93,24 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className='view-cocktails'>
+            <div className="view-cocktails">
               <p className="subtitle">
                 Turn your home into a cocktail lounge — because every night
                 deserves something clever and tasty.
               </p>
-              <a href='#cocktails'>View Cocktails</a>
+              <a href="#cocktails">View Cocktails</a>
             </div>
           </div>
         </div>
       </section>
 
-      <div className='video absolute inset-0'>
-        <video 
+      <div className="video absolute inset-0">
+        <video
           ref={videoRef}
-          src='/videos/output.mp4'
+          src="/videos/output.mp4"
           muted
           playsInline
-          preload='auto'
+          preload="auto"
         />
       </div>
     </>
