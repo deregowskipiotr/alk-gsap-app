@@ -58,7 +58,7 @@ const Card = ({ cocktail, onClose }) => {
         aria-modal="true"
         aria-labelledby="modal-title"
       >
-        <div className="relative max-w-3xl w-full lg:h-[650px]  mx-4 p-6 bg-gradient-to-br from-gray-800/40 via-gray-900/40 to-black/80 backdrop-blur-md bg-clip-padding rounded-lg text-white/90 shadow-md shadow-white/20 font-serif">
+        <div className="relative max-w-3xl w-full lg:h-[650px] h-[550px] mx-4 p-6 bg-gradient-to-br from-gray-800/40 via-gray-900/40 to-black/80 backdrop-blur-md bg-clip-padding rounded-lg text-white/90 shadow-md shadow-white/20 font-serif">
           {/* Close button */}
           <button
             onClick={handleClose}
