@@ -58,16 +58,16 @@ const Card = ({ cocktail, onClose }) => {
         aria-modal="true"
         aria-labelledby="modal-title"
       >
-        <div className="relative max-w-3xl w-full lg:h-[650px] h-[550px] mx-4 p-6 bg-gradient-to-br from-gray-800/40 via-gray-900/40 to-black/80 backdrop-blur-md bg-clip-padding rounded-lg text-white/90 shadow-md shadow-white/20 font-serif">
+        <div className="relative max-w-3xl w-full lg:h-[650px] h-[550px] mx-4 p-6 bg-gradient-to-br from-gray-800/40 via-gray-900/40 to-black/80 backdrop-blur-md bg-clip-padding rounded-lg text-white/90 shadow-lg shadow-yellow/30 font-serif">
           {/* Close button */}
           <button
             onClick={handleClose}
             aria-label="Close modal"
-            className="absolute top-4 right-4 text-white hover:text-indigo-300 text-3xl font-bold cursor-pointer"
+            className="absolute top-4 right-4 text-white hover:text-yellow text-3xl font-bold cursor-pointer"
           >
             &times;
           </button>
-          <h2 id="modal-title" className="text-4xl font-bold mb-4">
+          <h2 id="modal-title" className="text-xl md:text-4xl font-bold mb-4">
             {cocktail.name}
           </h2>
           <img
@@ -84,7 +84,7 @@ const Card = ({ cocktail, onClose }) => {
             draggable="false"
           />
           <p className="mb-6 italic">{cocktail.shortDescription}</p>
-          <h3 className="text-2xl font-semibold mb-3">Recipe:</h3>
+          <h3 className="text-xlmd:text-2xl font-semibold mb-3">Recipe:</h3>
           <ul className="list-disc list-inside space-y-1 max-h-96 overflow-y-auto">
             {cocktail.recipe.map((step, idx) => (
               <li key={idx}>{step}</li>
