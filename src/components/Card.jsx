@@ -73,7 +73,7 @@ const Card = ({ cocktail, onClose }) => {
           <img
             src={cocktail.imgPath}
             alt={cocktail.name + "bottle"}
-            className="pointer-events-none select-none absolute z-10 inset-0 mx-auto my-auto object-contain w-80 h-140 opacity-40"
+            className="pointer-events-none select-none absolute z-10 inset-0 mx-auto my-auto object-contain w-[45%] h-[75%] md:w-[60%] md:h-[90%] opacity-40"
             style={{
               left: "0",
               right: "0",
@@ -89,7 +89,7 @@ const Card = ({ cocktail, onClose }) => {
             {cocktail.recipe.map((step, idx) => (
               <li key={idx}>{step}</li>
             ))}
-            <p className="mt-10 italic">{cocktail.instruction}</p>
+            <p className="mt-10 italic hidden md:block">{cocktail.instruction}</p>
           </ul>
         </div>
       </div>

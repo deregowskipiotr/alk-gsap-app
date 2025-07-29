@@ -33,7 +33,7 @@ const CocktailsNew = () => {
   };
 
   return (
-    <section id="cocktails" className="noisy  ">
+    <section id="cocktails" className="w-full overflow-hidden radial-gradient">
       {/* <img src="/images/cocktail-left-leaf.png" alt="l-leaf" id="c-left-leaf" />
       <img
         src="/images/cocktail-right-leaf.png"
@@ -41,7 +41,7 @@ const CocktailsNew = () => {
         id="c-right-leaf"
       /> */}
 
-      <div className="popular mt-24 lg:mt-0">
+      <div className="popular mt-24 lg:mt-10">
         <h2 className="text-center font-modern-negra text-6xl text-yellow mx-5">
           Most popular cocktails:
         </h2>
@@ -54,7 +54,7 @@ const CocktailsNew = () => {
                   e.preventDefault();
                   handleClick(id);
                 }}
-                className="block px-4 py-3 h-[80px] lg:h-[50px] rounded-lg text-center bg-white/10 hover:bg-indigo-300/40 transition-colors duration-400 font-semibold tracking-wide"
+                className="block px-2 lg:py-4 py-5 h-[80px] lg:h-[60px] rounded-lg text-center bg-white/10 hover:bg-yellow/80 transition-colors duration-400 tracking-wide"
               >
                 {name}
               </a>

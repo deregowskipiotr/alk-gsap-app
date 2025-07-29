@@ -162,13 +162,13 @@ export const cocktailsData = [
       "A dazzling fusion of Becherovka’s legendary spice and luscious citrus, this cocktail sparkles with ginger warmth and orange zest. Like a Czech carnival in a glass, the first sip is intriguing, the second thoroughly addictive—a spicy adventure you’ll want to repeat!.",
     imgPath: "/images/bech.png",
     recipe: [
-      "40ml Becherovka Original (herbal Czech liqueur)",
+      "40ml Becherovka Original",
       "20ml vodka",
       "30ml fresh orange juice",
       "10ml fresh lemon juice",
       "10ml ginger syrup",
       "60ml tonic water (to top)",
-      "Twist of orange peel and star anise (for garnish)",
+      "Twist of orange peel and star anise",
       "Ice",
     ],
     instruction: [
@@ -254,7 +254,7 @@ export const cocktailsData = [
   },
   {
     id: "cocktail6",
-    name: "Ladie Luxury",
+    name: "Laddie Luxury",
     shortDescription:
       "Smoky, floral, and deliciously smooth, this cocktail is a windswept love letter to the Scottish isles—opulent in spirit, with just a cheeky hint of heather and sunshine. One sip and you'll be dreaming of misty lochs, rolling green hills, and laughter echoing through stone castles.",
     imgPath: "/images/bruichl1.png",

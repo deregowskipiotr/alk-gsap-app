@@ -24,13 +24,13 @@ const Navbar = () => {
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="Logo" className="w-10 h-10" />
           <p>
-            SI<span className="font-thin text-indigo-400">PP</span>ER
+            SI<span className="font-thin text-yellow">PP</span>ER
           </p>
         </a>
 
         <ul>
           {navLinks.map((link) => (
-            <li key={link.id} className="hover:text-indigo-300 duration-500 transition-all ease-in-out">
+            <li key={link.id} className="hover:text-yellow duration-500 transition-all ease-in-out">
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
