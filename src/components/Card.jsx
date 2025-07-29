@@ -84,8 +84,8 @@ const Card = ({ cocktail, onClose }) => {
             draggable="false"
           />
           <p className="mb-6 italic">{cocktail.shortDescription}</p>
-          <h3 className="text-xlmd:text-2xl font-semibold mb-3">Recipe:</h3>
-          <ul className="list-disc list-inside space-y-1 max-h-96 overflow-y-auto">
+          <h3 className="text-xl md:text-2xl font-semibold mb-3">Recipe:</h3>
+          <ul className="list-disc list-inside space-y-1 max-h-96 overflow-y-auto text-sm md:text-base">
             {cocktail.recipe.map((step, idx) => (
               <li key={idx}>{step}</li>
             ))}
