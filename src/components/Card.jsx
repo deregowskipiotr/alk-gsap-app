@@ -58,7 +58,7 @@ const Card = ({ cocktail, onClose }) => {
         aria-modal="true"
         aria-labelledby="modal-title"
       >
-        <div className="relative max-w-3xl w-full lg:h-[650px] h-[550px] mx-4 p-6 bg-gradient-to-br from-gray-800/40 via-gray-900/40 to-black/80 backdrop-blur-md bg-clip-padding rounded-lg text-white/90 shadow-lg shadow-yellow/30 font-serif">
+        <div className="relative max-w-3xl w-full lg:h-[650px] h-[550px] mx-4 p-6 border border-gray-700/40 bg-gradient-to-br from-black/60 via-gray-900/90 to-black/60 backdrop-blur-xl bg-clip-padding rounded-lg text-white/90 shadow-lg shadow-white/30">
           {/* Close button */}
           <button
             onClick={handleClose}
@@ -83,7 +83,7 @@ const Card = ({ cocktail, onClose }) => {
             aria-hidden="true"
             draggable="false"
           />
-          <p className="mb-6 italic">{cocktail.shortDescription}</p>
+          <p className="mb-6 italic font-extralight">{cocktail.shortDescription}</p>
           <h3 className="text-xl md:text-2xl font-semibold mb-3">Recipe:</h3>
           <ul className="list-disc list-inside space-y-1 max-h-96 overflow-y-auto text-sm md:text-base">
             {cocktail.recipe.map((step, idx) => (

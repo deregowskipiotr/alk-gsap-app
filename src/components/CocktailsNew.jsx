@@ -54,7 +54,7 @@ const CocktailsNew = () => {
                   e.preventDefault();
                   handleClick(id);
                 }}
-                className="block px-2 lg:py-4 py-5 h-[80px] lg:h-[60px] rounded-lg text-center bg-white/10 hover:bg-yellow/80 transition-colors duration-400 tracking-wide"
+                className="block px-2 lg:py-6 py-5 h-[80px] lg:h-[75px] rounded-lg text-center bg-inherit border border-white/20 hover:bg-white/10 transition-colors duration-400 tracking-wide backdrop-blur-lg"
               >
                 {name}
               </a>
